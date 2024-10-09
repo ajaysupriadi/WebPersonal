@@ -1,0 +1,105 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Feather Icons CDN -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <title>Ajay Supriadi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #0f2027, #2c5364); /* Gradien warna gelap */
+        }
+
+        .profile-container {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 350px; /* Lebar card lebih besar */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-container img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px; /* Tambah jarak antara gambar dan nama */
+        }
+
+        .profile-container h1 {
+            font-size: 28px; /* Ukuran font lebih besar */
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #0077b5;
+            color: white;
+            padding: 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 8px 0; /* Tambah jarak antar link */
+            transition: background-color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: #005582;
+        }
+
+        .social-links a i {
+            margin-right: 8px; /* Jarak antara ikon dan teks */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <img src="ajay.jpeg" alt="Foto Profil">
+        <h1>Ajay Supriadi</h1>
+        <div class="social-links">
+            <a href="https://www.instagram.com/ajaysupriadi/profilecard/?igsh=MWNqcWNsazRzc3h0dg=="> 
+                <i data-feather="instagram"></i> Instagram
+            </a>
+            <a href="https://youtube.com/@ajaysupriadi?si=lS_qTVUt2x2cZvlY"> 
+                <i data-feather="youtube"></i> YouTube
+            </a>
+            <a href="https://www.facebook.com/share/NALKP7fDvdNyy4FE/">  
+                <i data-feather="facebook"></i> Facebook
+            </a>
+        </div>
+    </div>
+
+    <!-- Feather Icons Initialization -->
+    <script>
+        feather.replace()
+    </script>
+    
+    <!-- Bootstrap JS CDN (Optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
